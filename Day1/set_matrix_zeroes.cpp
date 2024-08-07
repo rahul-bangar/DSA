@@ -136,11 +136,11 @@ int main()
 
     vector<vector<int> > ans1 = approach1(matrix, n, m);
     cout << "The Final matrix is: \n";
-    for (auto it : ans1) {
-        for (auto ele : it) {
-            cout << ele << " ";
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout<<ans1[i][j]<<" ";
         }
-        cout << "\n";
+        cout<<"\n";
     }
     cout<<"Approach 2\n";
     cout<<"Time Complexity: O(2*(N*M)), where N = no. of rows in the matrix and M = no. of columns in the matrix.\n";
@@ -148,11 +148,11 @@ int main()
     cout<<"Space Complexity: O(N) + O(M), where N = no. of rows in the matrix and M = no. of columns in the matrix.\n";
     cout<<"Reason: O(N) is for using the row array and O(M) is for using the col array.\n";
     vector<vector<int> > ans2 = approach2(matrix, n, m);
-    for (auto it : ans2) {
-        for (auto ele : it) {
-            cout << ele << " ";
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout<<ans2[i][j]<<" ";
         }
-        cout << "\n";
+        cout<<"\n";
     }
 
     cout<<"Approach 3\n";
@@ -160,11 +160,11 @@ int main()
     cout<<"Reason: In this approach, we are also traversing the entire matrix 2 times and each traversal is taking O(N*M) time complexity.\n";
     cout<<"Space Complexity: O(1) as we are not using any extra space.\n";
     vector<vector<int> > ans3 = approach3(matrix, n, m);
-    for (auto it : ans3) {
-        for (auto ele : it) {
-            cout << ele << " ";
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout<<ans3[i][j]<<" ";
         }
-        cout << "\n";
+        cout<<"\n";
     }
     return 0;
 }
