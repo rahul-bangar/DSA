@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 static bool cmp(const pair<int,int> &a, const pair<int,int> &b){
-        if(a.second<b.second) return 1;
-        return 0;
-    }
+    if(a.second<b.second) return 1;
+    return 0;
+}
 int maxMeetings(int n, vector<int> &start, vector<int> &end) {
     vector<pair<int,int> > interval(n);
     for(int i=0;i<n;i++){
